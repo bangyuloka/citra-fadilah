@@ -1,0 +1,43 @@
+ .container-kontak {
+           max-width:640px;
+            width: 92%;			
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .container-kontak {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        .kontak-info, .social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kontak-item, .social-links {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .kontak-item img, .social-links img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        .social-links img {
+            width: 48px;
+            height: 48px;
+        }

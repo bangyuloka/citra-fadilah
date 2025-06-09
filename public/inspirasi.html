@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspirasi Bangun Rumah</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/css-bg1.css">	
+  <link rel="stylesheet" href="assets/css/style.css">
+ <style>
+ /* === Video Grid === */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.video-card {
+  width: calc(50% - 8px);
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+@media (min-width: 992px) {
+  .video-card {
+    width: calc(33.333% - 11px);
+  }
+   </style>
+  
+</head>
+<body>
+  <div class="container">
+    <header class="top-bar">
+      <div class="top-bar-inner">
+        <div class="logo">
+          <a href="index.html">
+             <img src="assets/images/logo.png" alt="Logo Citra Fadilah" onerror="this.style.display='none';">
+          </a>
+        </div>
+        <nav class="top-menu">
+          <a href="inspirasi.html">Inspirasi</a>
+          <a href="layanan.html">Layanan</a>
+          <a href="projek.html">Projek</a>
+          <a href="hubungi.html" >Hubungi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+	<section >
+	
+	<div class="video-grid">
+  <div class="video-card">
+    <video controls>
+      <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-card">
+    <video controls>
+      <source src="videos/video2.mp4" type="video/mp4">
+    </video>
+  </div>
+   <div class="video-card">
+    <video controls>
+      <source src="videos/video3.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+</section >
+
+
+<section >
+	<div class="image-wrapper">
+				<img src="assets/images/background-rumah.jpg" alt="Italian Trulli" >
+				</div>	
+
+	</section >		
+			
+    </main>
+
+   <footer class="bottom-bar">
+  <div class="bottom-bar-inner">
+    <!-- Home -->
+    <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+      Home
+    </a>
+
+    <!-- Inspirasi -->
+    <a href="inspirasi.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2a7 7 0 00-7 7c0 2.5 1.7 4.6 4 6v5h6v-5c2.3-1.4 4-3.5 4-6a7 7 0 00-7-7z"/>
+      </svg>
+      Inspirasi
+    </a>
+
+    <!-- Layanan -->
+    <a href="layanan.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M3 13h2v-2H3v2zm4 0h14v-2H7v2zM3 17h2v-2H3v2zm4 0h14v-2H7v2zM3 9h2V7H3v2zm4 0h14V7H7v2z"/>
+      </svg>
+      Layanan
+    </a>
+
+    <!-- Projek -->
+    <a href="projek.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 6v12M16 6v12" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      Projek
+    </a>
+
+    <!-- Hubungi -->
+   <a href="hubungi.html">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.73 3.85.73a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.25 2.65.73 3.85a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+  </svg>
+  Hubungi
+</a>
+  </div>
+</footer>
+
+  </div>
+  
+  /* === Gallery Switch JS === */
+<script>
+  function setMain(el) {
+    const mainImage = document.getElementById("main-image");
+    const src = el.getAttribute("src");
+
+    // Fade out
+    mainImage.classList.add("fade-out");
+
+    setTimeout(() => {
+      mainImage.setAttribute("src", src);
+      mainImage.classList.remove("fade-out");
+    }, 300);
+
+    document.querySelectorAll(".gallery-thumbs img").forEach(img => img.classList.remove("active"));
+    el.classList.add("active");
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+		.product {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 120px;
+            height: 120px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .product-info {
+            margin-left: 15px;
+        }
+        .product-info h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .product-info p {
+            margin: 5px 0 0;
+            color: #666;
+        }

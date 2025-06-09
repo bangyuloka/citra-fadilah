@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami - Citra Fadilah CV</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  
+  <link rel="stylesheet" href="assets/css/style.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <header class="top-bar">
+      <div class="top-bar-inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="Logo Citra Fadilah" onerror="this.style.display='none';">
+          </a>
+        </div>
+        <nav class="top-menu">
+          <a href="inspirasi.html">Inspirasi</a>
+          <a href="layanan.html">Layanan</a>
+          <a href="projek.html">Projek</a>
+          <a href="hubungi.html" >Hubungi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+			
+	<section>
+ 
+  
+    <div class="container-kontak">
+	
+		<div class="center-wrapper">
+		<div class="image-wrapper60">	
+		<img src="assets/images/hubungi-kami-jasa-bangun-rumah.png" alt="Hubungi Kami">
+		</div>
+		</div>
+	
+	
+      <h2>Hubungi Kami</h2>
+
+<div class="center-column">
+      <div class="kontak-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <span>+62 812-3456-7890</span>
+      </div>
+      <div class="kontak-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <span>+62 821-9876-5432</span>
+      </div>
+      <div class="kontak-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        <span>citrafadilahcv@gmail.com</span>
+      </div>
+      <div class="kontak-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Alamat">
+        <span>Jl. Praptan-Rajagaluh KM 2 Parungjaya, Majalengka</span>
+      </div>
+ </div>
+      <div class="social-media">
+        <h2>Ikuti Kami</h2>
+        <div class="social-links">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        </div>
+      </div>
+	  
+	  
+    </div>
+  
+</section>
+
+			
+			
+    </main>
+
+   <footer class="bottom-bar">
+  <div class="bottom-bar-inner">
+    <!-- Home -->
+    <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+      Home
+    </a>
+
+    <!-- Inspirasi -->
+    <a href="inspirasi.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2a7 7 0 00-7 7c0 2.5 1.7 4.6 4 6v5h6v-5c2.3-1.4 4-3.5 4-6a7 7 0 00-7-7z"/>
+      </svg>
+      Inspirasi
+    </a>
+
+    <!-- Layanan -->
+    <a href="layanan.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M3 13h2v-2H3v2zm4 0h14v-2H7v2zM3 17h2v-2H3v2zm4 0h14v-2H7v2zM3 9h2V7H3v2zm4 0h14V7H7v2z"/>
+      </svg>
+      Layanan
+    </a>
+
+    <!-- Projek -->
+    <a href="projek.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 6v12M16 6v12" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      Projek
+    </a>
+
+    <!-- Hubungi -->
+   <a href="hubungi.html">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.73 3.85.73a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.25 2.65.73 3.85a1 1 0 01-.21 1.11l-2.2 2.2z"/>
+  </svg>
+  Hubungi
+</a>
+  </div>
+</footer>
+
+  </div>
+  
+  /* === Gallery Switch JS === */
+<script>
+  function setMain(el) {
+    const mainImage = document.getElementById("main-image");
+    const src = el.getAttribute("src");
+
+    // Fade out
+    mainImage.classList.add("fade-out");
+
+    setTimeout(() => {
+      mainImage.setAttribute("src", src);
+      mainImage.classList.remove("fade-out");
+    }, 300);
+
+    document.querySelectorAll(".gallery-thumbs img").forEach(img => img.classList.remove("active"));
+    el.classList.add("active");
+  }
+</script>
+
+
+</body>
+</html>
